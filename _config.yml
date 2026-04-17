@@ -1,4 +1,4 @@
-title: PyPSA Teaching Tool
+title: PyPSA Tutorial
 description: A guide to Power System Analysis with PyPSA.
 remote_theme: just-the-docs/just-the-docs
 baseurl: "/pypsa-tutorial"
@@ -9,8 +9,8 @@ search_enabled: true
 search:
   rel_url: true
 
-# Color Scheme (Optional: PyPSA-ish green/blue)
-color_scheme: dark # or omit for light mode
+# Color Scheme
+color_scheme: light # or omit for light mode
 
 # Layout settings
 aux_links:

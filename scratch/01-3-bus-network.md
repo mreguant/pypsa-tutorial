@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: The 3-Bus Network
 nav_order: 2
 has_children: false
----
+--- -->
 
 # Lesson 1: Building a 3-Bus Network
 {: .no_toc }
