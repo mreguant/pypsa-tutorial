@@ -22,31 +22,34 @@ We want to simulate a small system with:
 ### Static Code Snippet
 To define this in PyPSA, you would use the following logic:
 
+
+[Launch in Google Colab](https://colab.research.google.com/github/mreguant/pypsa-tutorial/blob/main/notebooks/first_example.ipynb){: .btn .btn-blue }
+
 ```python
-import pypsa
+# 1. Create the Network
 n = pypsa.Network()
+n.add("Bus", "Market", v_nom=380)
 
-# Add three buses
-for i in range(3):
-    n.add("Bus", f"My Bus {i}", v_nom=380)
+# 2. Add Generators with different costs and capacities
+# Costs are in EUR/MWh, capacity in MW
+n.add("Generator", "Wind", bus="Market", p_nom=100, marginal_cost=0)
+n.add("Generator", "Coal", bus="Market", p_nom=100, marginal_cost=30)
+n.add("Generator", "Gas",  bus="Market", p_nom=100, marginal_cost=60)
 
-# Add a generator at Bus 0
-n.add("Generator", "My Gen", bus="My Bus 0", p_set=100, control="Slack")
+# 3. Add a Load (Demand)
+n.add("Load", "Demand", bus="Market", p_set=150)
 
-# Add a load at Bus 2
-n.add("Load", "My Load", bus="My Bus 2", p_set=80)
+# 4. Solve using 'highs' (a modern, fast open-source solver)
+n.sanitize()
+n.optimize(solver_name='highs')
 
-# This finds the least-cost dispatch to satisfy the load
-n.optimize(solver_name='glpk')
-
-# What is the power flow on the lines?
-print(n.lines_t.p0)
-
-# What are the marginal prices (LMPs) at the buses?
-print(n.buses_t.lambdas)
+# 5. Display Results
+print("\n--- Dispatch Results (MW) ---")
+print(n.generators_t.p)
 ```
 
 ---
+
 
 ## Reviewing the Results
 Once the power flow is solved, PyPSA stores the results in the `n.lines_t` and `n.buses_t` dataframes. For a static look, we focus on the **Active Power (p0)**.
