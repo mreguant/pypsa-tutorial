@@ -23,7 +23,7 @@ We want to simulate a small system with:
 To define this in PyPSA, you would use the following logic:
 
 
-[Launch in Google Colab](https://colab.research.google.com/github/mreguant/pypsa-tutorial/blob/main/notebooks/first_example.ipynb){: .btn .btn-blue }
+[Open In Colab](https://colab.research.google.com/github/mreguant/pypsa-tutorial/blob/main/notebooks/first_example.ipynb){: .btn .btn-blue }
 
 ```python
 # 1. Create the Network
