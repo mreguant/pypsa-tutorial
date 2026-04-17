@@ -1,0 +1,21 @@
+title: PyPSA Teaching Tool
+description: A guide to Power System Analysis with PyPSA.
+remote_theme: just-the-docs/just-the-docs
+baseurl: "/pypsa-tutorial"
+url: "https://mreguant.github.io"
+
+# Enable the built-in search
+search_enabled: true
+search:
+  rel_url: true
+
+# Color Scheme (Optional: PyPSA-ish green/blue)
+color_scheme: dark # or omit for light mode
+
+# Layout settings
+aux_links:
+  "PyPSA GitHub": "https://github.com/PyPSA/PyPSA"
+  "PyPSA Documentation": "https://pypsa.readthedocs.io/"
+
+# This organizes your sidebar by "nav_order" defined in each file
+nav_sort: integer
