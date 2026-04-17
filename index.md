@@ -15,7 +15,7 @@ Welcome! This site is a structured guide to learning **Python Power System Analy
 
 ---
 
-## Why this guide?
+## Why this guide? 
 PyPSA is a powerful tool, but the learning curve can be steep. This site breaks down complex power system concepts into manageable lessons with:
 * **Static Visuals:** Clear diagrams of networks and optimization results.
 * **Interactive Code:** Every lesson includes a link to run the code in the cloud.
@@ -27,3 +27,4 @@ Select a module from the sidebar to begin.
 1. **The Network Object:** Understanding buses, lines, and loads.
 2. **Lopf vs Pf:** Linear Optimal Power Flow vs. simple Power Flow.
 3. **Sector Coupling:** Adding heat and transport to the mix.
+
