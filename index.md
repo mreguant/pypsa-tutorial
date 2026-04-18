@@ -26,5 +26,5 @@ Select a module from the sidebar to begin.
 ### Core Concepts
 1. **Getting up and running:** Understanding the main objects in pyPSA and how to obtain them.
 2. **Basic modeling:** Using the tools to customize a basic model and improve fit.
-3. **Improving fit:** Making models more realistic with more complex options.
+3. **Getting at richer comparisons:** Making models more realistic with more complex options and compare outcomes.
 4. **Bonus:** Building the CA model from class in pyPSA, pros and cons.

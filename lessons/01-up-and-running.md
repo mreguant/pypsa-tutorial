@@ -17,6 +17,8 @@ We want to understand how to get started with a big project:
 1. Create a baseline model using existing tools (e.g., pyPSA-Europe or pyPSA-Earth).
 2. Modify the existing model to taylor it to our needs.
 
+[Open In Colab](https://colab.research.google.com/github/mreguant/pypsa-tutorial/blob/main/notebooks/up-and-running.ipynb){: .btn .btn-blue}{:target="_blank"}
+
 ### Creating a baseline model using pyPSA-Europe
 In my experience, the best way to create a realistic model is to start from an existing version, and modify it to improve fit or taylor it to our setting.
 
@@ -50,11 +52,11 @@ We can also modify this network! This is the key to both:
 1. Improving a model for better fit
 2. Modifying a model to get insights
 
-Here you can see a small example on how to modify the network from above, re-run, and compare.
+Open the Colab to get code with a basic example on how to do both steps.
 
 ---
 
 ## What's Next?
 Now that you've built a basic network and we have learned how to modify it, we will use the pyPSA library to explore possibilities. 
 
-[Next Lesson: Adding Time Series →]({{ site.baseurl }}/lessons/02-time-series){: .btn .btn-purple }
+[Next Lesson: Modifying a model to make it more realistic →]({{ site.baseurl }}/lessons/02-basic-modifications){: .btn .btn-purple }
